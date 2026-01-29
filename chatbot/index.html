@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+
+    <!-- n8n Chat CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" 
+        rel="stylesheet"
+    />
+</head>
+<style>
+
+    .div1{
+        font-family: cursive;
+        background-color: black;
+        width: 700px;
+        height: 60px;
+        border-radius: 20px;
+        color: #ffffff;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 30px;
+       background: linear-gradient(90deg, #000000, #1a1a1a);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+       margin-right: 500px;
+       margin-left: 400px;
+    }
+    .info-card {
+  background-color: #ffffff;     /* Beyaz kutu */
+  width: 800px; 
+  height: 400px;                 /* Kutu genişliği */
+  padding: 40px 30px;            /* İç boşluk */
+  border-radius: 20px;           /* Yuvarlak köşeler */
+
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+  /* Altına yumuşak gölge */
+
+  margin: 50px auto;             /* Sayfada ortala */
+  text-align: center;            /* Yazıyı ortala */
+}
+
+/* Başlık */
+.info-card h2 {
+  color: #3b6cff;                /* Mavi başlık */
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Açıklama yazısı */
+.info-card p {
+  font-size: 18px;
+  line-height: 1.7;              /* Satır aralığı */
+  color: #333;
+}
+
+</style>
+<body>
+
+    <!-- n8n Chat Script -->
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+        createChat({
+            webhookUrl: 'you_are_link'
+        });
+    </script>
+    <header>
+        <div class="div1">
+           MSK BERBER
+        </div>
+    </header>
+<div class="info-card">
+  <h2>Vizyonumuz</h2>
+  <p>
+    MSK Barber olarak, klasik berber geleneğini modern dokunuşlarla birleştiriyoruz. Her müşterimizin tarzını ve beklentisini önemsiyor, saç ve sakal kesimini sadece bir işlem değil, özel bir deneyim haline getiriyoruz. Profesyonel ekibimiz, kaliteli ürünler ve hijyenik ortam ile kendinizi her zaman iyi hissetmenizi sağlar. Amacımız, koltuğumuzdan memnun ve özgüvenli kalkmanızı sağlamak.
+  </p>
+    <h2>Bu projenin yapılış Amacı</h2>
+  <p>
+Bu proje, kendi gelişimim için hazırlanmıştır. Bu sitede asıl dikkat çekmek istediğim nokta, tasarım ya da butonların konumu değil; n8n otomasyonu kullanılarak bir chatbot geliştirilebildiğini göstermektir. Site şu anda açık kaynak olduğu için chatbot aktif olarak çalışmamaktadır. Ancak kendi API anahtarlarınızı eklediğinizde, sistemin sorunsuz bir şekilde çalıştığını görebilirsiniz.
+  </p>
+</div>
+
+
+
+
+
+
+</body>
+</html>
